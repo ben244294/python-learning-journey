@@ -10,11 +10,16 @@ This repository documents my journey to mastering Python and becoming an AI/ML e
 * Conditionals
 * Loops
 * Sets
-* Functions (in progress)
+* Functions
+* Error handling using try and except
+* methods
+* developer fundamentals
 
 # Mini Projects
 
-* Coming soon...
+* Calculator
+* To do list
+* Number Guessing Game
 
 ## 🎯 Goal
 

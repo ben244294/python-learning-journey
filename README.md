@@ -21,10 +21,10 @@ This repository documents my journey to mastering Python and becoming an AI/ML e
 * To do list
 * Number Guessing Game
 # Progress
-*Algorithms from leetcode
-*mini projects
-*Data-structures
-*Machine learning
+* Algorithms from leetcode
+* mini projects
+* Data-structures
+* Machine learning
 ## 🎯 Goal
 
 To build strong programming and problem-solving skills and transition into AI/ML engineering.

@@ -11,17 +11,22 @@
 
 import string
 import secrets
+
+def capital_password(length):
+    alpha_pass = " "
+    count = 0
+    while count < length :
+        alpha_pass += "".join(secrets.choice(string.ascii_uppercase))#
+        count += 1
+    return alpha_pass
+
+
 user_choice = 0
 try :
     user_choice = int(input("Please enter the length of you desired password"))
 except ValueError:
     print("Please enter a number")
-user_preference = input("Please enter C for all capitals, l for all small characters, s for only special symbols and M for an integration of the three  "
-def capital_password():
-    alpha_pass = "".join(secrets.choice(string.ascii_uppercase))
-    print(alpha_pass)
-while user_choice <= 0:
 
-    if user_preference == "C":
-        print(capital_password())
-
+user_preference = input("Enter C for capital letters, L for small, S for symbols,D for digits and M for an integration of all four")
+if user_preference == "C":
+    print(capital_password(16))

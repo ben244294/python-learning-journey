@@ -13,17 +13,17 @@ import string
 import secrets
 
 def capital_password(length):
-    alpha_password = " "
+    alpha_password = ""
     count = 0
     while count < length :
-        alpha_password += "".join(secrets.choice(string.ascii_uppercase))#
+        alpha_password += secrets.choice(string.ascii_uppercase)
         count += 1
     return alpha_password
 def small_password(length):
-    lower_password = " "
+    lower_password = ""
     count = 0
     while count < length :
-        lower_password += "".join(secrets.choice(string.ascii_lowercase))
+        lower_password += secrets.choice(string.ascii_lowercase)
         count += 1
     return lower_password
 def digits_password(length):
@@ -46,11 +46,12 @@ while True:
     user_choice = 0
     try:
         user_choice = int(input("Please enter the length of you desired password"))
+        
     except ValueError:
         print("Please enter a number")
 
     user_preference = input(
-        "Enter C for capital letters, L for small, S for symbols,D for digits and M for an integration of all four")
+        "Enter C for capital letters, L for small, S for symbols,D for digits and M for an integration of all four").strip().upper()
     if user_preference == "C":
         print(capital_password(user_choice))
     elif user_preference == "L":
@@ -59,8 +60,11 @@ while True:
         print(digits_password(user_choice))
     elif user_preference == "S":
         print(symbols_password(user_choice))
-    else :
+    elif user_preference =="M":
         print(full_password(user_choice))
+    else :
+        print("invalid option please enter one of the provided options")
+
 
 
 

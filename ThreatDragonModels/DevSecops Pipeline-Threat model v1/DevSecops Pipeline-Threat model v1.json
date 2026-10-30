@@ -1,0 +1,37 @@
+{
+  "version": "2.6.2",
+  "release_version": "1.0",
+  "released_at": "2026-10-29",
+  "summary": {
+    "title": "DevSecops Pipeline-Threat model v1",
+    "owner": "Team 1",
+    "description": "Threat model displays a CI/CD pipeline that scans, and gates builds of a Python web app",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Jesu"
+      },
+      {
+        "name": "Fred"
+      },
+      {
+        "name": "Emmanuel"
+      },
+      {
+        "name": "Hannah"
+      },
+      {
+        "name": "Othniel"
+      },
+      {
+        "name": "Benjamin"
+      }
+    ],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
